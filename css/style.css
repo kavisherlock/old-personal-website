@@ -1,0 +1,288 @@
+html {
+  height: auto;
+  min-height: 100%;
+  background-image: url("../resources/dust_scratches.png");
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background: lavenderblush;
+  background-image: url("../resources/dust_scratches.png");
+  margin: 0;
+  padding: 0;
+  font-family: 'ABeeZee', 'Helvetica', sans-serif;
+  line-height: 1;
+}
+
+svg {
+  float: left;
+}
+
+/* Generic resets */
+a {
+  text-decoration: none;
+  color: #2D6DA2;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #16A085;
+}
+
+img {
+  border-style: none;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 0.5em 0 0.5em 0;
+}
+
+
+.body-content {
+  margin: 0 15% 0 15%;
+  padding: 1% 0 5% 0;
+  box-shadow: 4px 4px 3px grey;
+  background: linear-gradient(#6DBDF2 20%, rgb(205, 131, 248), rgb(78, 224, 168));
+  color: lavenderblush;
+  text-align: justify;
+}
+
+/* Header */
+header {
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-family: 'Homemade Apple';
+  font-size: 2em;
+  margin: 0;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #E6E6FA;
+  text-shadow:  4px 4px 3px grey;
+}
+
+h1 a:hover {
+  text-decoration: none;
+  color: #E6E6FA;
+  text-shadow:  4px 4px 3px #555;
+}
+
+ul, ol {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main-menu {
+  float: right;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+#main-menu li {
+  display: inline;
+}
+
+#main-menu li a {
+  font-family: 'Homemade Apple', cursive, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 15px;
+  padding-top: 18px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #EBEBFF;
+  transition: background-color 1s ease-in-out;
+  -moz-transition: background-color 1s ease-in-out;
+  -webkit-transition: background-color 1s ease-in-out;
+}
+
+#main-menu li a.selected {
+  color: #FFF;
+  background-color: #3D7DB2;
+}
+
+#main-menu li a:hover {
+  color: #FFF;
+  background-color: #3D7DB2;
+}
+
+/* Home */
+#content {
+  overflow: hidden;
+  margin-top: 50px;
+  line-height: 1.5;
+  font-size: 100%;
+  text-align: justify;
+  color: lavenderblush;
+}
+
+#subtext {
+  text-align: center;
+  margin-top: -20px;
+  color: lavenderblush;
+}
+
+canvas.full {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content-inner {
+  font-size: 75%;
+}
+
+h2 {
+  font-family: 'Homemade Apple', sans-serif;
+  font-weight: bold;
+}
+
+.section {
+  padding-top: 50px;
+  border-top: solid lavenderblush 1px;
+}
+
+/* About Me */
+#about {
+  margin-top: 100px;
+  line-height: 1.5;
+}
+
+/* Books */
+#books {
+  margin-top: 50px;
+  line-height: 1.5;
+}
+
+#books h3 {
+  border-top: solid lavenderblush 0.5px;
+  border-bottom: solid lavenderblush 0.5px;
+  padding: 10px 0;
+}
+
+.book-row {
+  height: 180px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.book-cell {
+  display: inline-block;
+  width: 12%;
+}
+
+.book-cell img {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+.book-cell:hover img {
+  opacity: 0;
+  transition: opacity .55s ease-in-out;
+  -moz-transition: opacity .55s ease-in-out;
+  -webkit-transition: opacity .55s ease-in-out;
+}
+
+.book-cell p {
+  position: absolute;
+  text-align: center;
+  width: 12%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+.book-cell:hover p {
+  opacity: 1;
+  transition: opacity .55s ease-in-out;
+  -moz-transition: opacity .55s ease-in-out;
+  -webkit-transition: opacity .55s ease-in-out;
+}
+
+
+/* Work */
+#work {
+  line-height: 1.5;
+}
+
+.work-cards {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+}
+
+.work-card {
+  width: 50%;
+  border: double lavender 3px;
+  padding: 10px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  padding-right: 15%;
+  text-align: right;
+}
+
+
+/* Rules for all devices > 600px */
+@media screen and (min-width: 600px) {
+  header {
+  padding-top: 20px;
+}
+
+  h1,h2 {
+  font-size: 3em;
+}
+
+#main-menu {
+  padding: 10px;
+  margin-top: 5px;
+}
+
+#main-menu a {
+  margin-right: 10px;}
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .fluid {
+    position: relative;
+    left: 50%;
+    width: 90%;
+    margin-left: -45%;
+  }
+}
+
+/* Max screen width of 1000px */
+@media screen and (min-width: 1000px) {
+  .fluid {
+    position: relative;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;}
+    #main-menu {
+    margin-top: -10px;
+  }
+}
